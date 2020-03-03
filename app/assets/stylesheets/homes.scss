@@ -8,10 +8,25 @@
   background-color: rgb(243, 239, 239);
   opacity: 0.7;
   .contents-box {
+    display: flex;
+    justify-content: space-between;
     &__name {
       padding-top: 17px;
       padding-left: 10px;
       font-size: 36px;
+    }
+    &__menu {
+      &--logout {
+        padding-top: 25px;
+        padding-right: 10px;
+        a{
+          font-size: 14px;
+          color: black;
+          border: solid 3px rgb(182, 153, 153);
+          border-radius: 10px;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
@@ -49,12 +64,13 @@
   background-color: rgb(238, 190, 190);
   opacity: 0.7;
   padding-top: 15px;
-  padding-left: 90px;
+  padding-left: 30px;
+  display: flex;
   .post-box {
-    width: 1090px;
+    width: 1080px;
     height: 50px;
     background-color: white;
     margin-top: 15px;
-    margin-left: 90px;
+    margin-left: 40px;
   }
 }

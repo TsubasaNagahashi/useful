@@ -3,6 +3,8 @@
     .contents-box__name
       %p Talk Room
     .contents-box__menu
+      .contents-box__menu--logout
+        = link_to 'ログアウト', destroy_user_session_path, method: :delete
 .main
   .left
     .category-box
@@ -18,6 +20,8 @@
       .talk-box__date
         2020/2/20 PM 7:30
 .footer
+  .message-counter
+    今日のトーク数
   .post-box
     .post-box__text
     .post-box__image
